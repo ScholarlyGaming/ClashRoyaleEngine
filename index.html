@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Clash Royale Engine</title>
+    <style>
+      body {
+        background-color: #c000c0;
+        margin-top: -1rem;
+      }
+      .title {
+        text-align: center;
+        color: white;
+        background-color: purple;
+      }
+      header,
+      .full-width {
+        margin: 0 -1rem;
+        /* add back negative margin value */
+        padding: 0.25rem 1rem;
+        width: 100%;
+      }
+      .purple {
+        background: purple;
+      }
+      .wrap {
+        width: 80%;
+        max-width: 24em;
+        margin: 0 auto;
+        padding: 0.25em 0.625em;
+      }
+    </style>
+    <script>
+      function deck1(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000004;26000005;26000036;26000042;26000027;26000046;28000008;28000009";
+      }
+      function deck2(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000029;26000006;26000039;26000005;26000008;28000008;28000000;27000009";
+      }
+      function deck3(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000026;26000041;28000004;26000000;26000030;28000011;27000003;28000003";
+      }
+      function deck4(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000024;26000042;26000015;26000039;27000010;26000025;28000015;28000007";
+      }
+      function deck5(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000059;26000046;26000057;26000049;26000008;26000014;28000015;28000017";
+      }
+      function deck6(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000003;28000011;28000008;28000000;26000016;26000063;26000039;26000032";
+      }
+      function deckP1(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000010;26000014;26000021;26000030;26000038;27000000;28000000;28000011";
+      }
+      function deckP2(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000000;26000026;26000030;26000041;27000003;28000003;28000004;28000011";
+      }
+      function deckP3(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000001;26000010;26000030;26000038;27000006;27000008;28000000;28000011";
+      }
+      function deckP4(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000006;26000014;26000030;26000035;26000038;26000049;28000015;28000017";
+      }
+      function deckP5(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000009;26000015;26000035;26000039;26000048;28000007;28000012;28000015";
+      }
+      function deckP6(a) {
+        document.getElementById(a).value =
+          "https://link.clashroyale.com/deck/en?deck=26000024;26000008;28000008;26000039;28000001;26000021;26000022;26000033";
+      }
+    </script>
+  </head>
+  <body>
+    <header class="purple">
+      <h1 class="title">Clash Royale Engine</h1>
+      <h2 class="title">Created by Scholarly Gaming</h2>
+    </header>
+    <p>Welcome to my Clash Royale Engine! Here, you can test decks out using a number of different data sets. You can also use savestates and a variety of settings to test any tournament-level interaction in the game.</p>
+    <p>This form is meant to set up a standard battle; for replay testing, visit <a href="translator.html" style="color:white">translator.html</a>.</p>
+    <p>Want to try your hand at creating your own card? Visit <a href="creator.html" style="color:white">creator.html</a>.</p>
+    <form action="engine.html">
+      <!-- Text area -->
+      <div>
+        <h2 class="full-width" style="background-color: #a000f0" for="blueDeck">
+          Blue Deck
+        </h2>
+        <p><i>Select a classic deck...</i></p>
+        <button type="button" onclick="deck1('blueDeck')">
+          P.E.K.K.A. Ram
+        </button>
+        <button type="button" onclick="deck2('blueDeck')">
+          LavaLoon
+        </button>
+        <button type="button" onclick="deck3('blueDeck')">
+          Spell Bait
+        </button>
+        <button type="button" onclick="deck4('blueDeck')">
+          Royal Pain
+        </button>
+        <button type="button" onclick="deck5('blueDeck')">
+          Pigs on Parade
+        </button>
+        <button type="button" onclick="deck6('blueDeck')">
+          Gigantic Prince
+        </button>
+        <p><i>Or a popular deck...</i></p>
+        <button type="button" onclick="deckP1('blueDeck')">
+          Hog 2.6
+        </button>
+        <button type="button" onclick="deckP2('blueDeck')">
+          Classic Bait
+        </button>
+        <button type="button" onclick="deckP3('blueDeck')">
+          X-Bow 2.9
+        </button>
+        <button type="button" onclick="deckP4('blueDeck')">
+          Snow Balloons
+        </button>
+        <button type="button" onclick="deckP5('blueDeck')">
+          Golem Beatdown
+        </button>
+        <button type="button" onclick="deckP6('blueDeck')">
+          Sparky-Hog-RG
+        </button>
+        <p><i>Or paste a URL here:</i></p>
+        <textarea
+          name="blueDeck"
+          id="blueDeck"
+          placeholder="Paste in your Clash Royale deck URL here..."
+          cols="50"
+          rows="5"
+        ></textarea>
+        <p></p>
+      </div>
+      <!-- Text area -->
+      <div>
+        <h2 class="full-width" style="background-color: #f000a0" for="redDeck">
+          Red Deck
+        </h2>
+        <p><i>Select a classic deck...</i></p>
+        <button type="button" onclick="deck1('redDeck')">
+          P.E.K.K.A. Ram
+        </button>
+        <button type="button" onclick="deck2('redDeck')">
+          LavaLoon
+        </button>
+        <button type="button" onclick="deck3('redDeck')">
+          Spell Bait
+        </button>
+        <button type="button" onclick="deck4('redDeck')">
+          Royal Pain
+        </button>
+        <button type="button" onclick="deck5('redDeck')">
+          Pigs on Parade
+        </button>
+        <button type="button" onclick="deck6('redDeck')">
+          Gigantic Prince
+        </button>
+        <p><i>Or a popular deck...</i></p>
+        <button type="button" onclick="deckP1('redDeck')">
+          Hog 2.6
+        </button>
+        <button type="button" onclick="deckP2('redDeck')">
+          Classic Bait
+        </button>
+        <button type="button" onclick="deckP3('redDeck')">
+          X-Bow 2.9
+        </button>
+        <button type="button" onclick="deckP4('redDeck')">
+          Snow Balloons
+        </button>
+        <button type="button" onclick="deckP5('redDeck')">
+          Golem Beatdown
+        </button>
+        <button type="button" onclick="deckP6('redDeck')">
+          Sparky-Hog-RG
+        </button>
+        <p><i>Or paste a URL here:</i></p>
+        <textarea
+          name="redDeck"
+          id="redDeck"
+          placeholder="Paste in your Clash Royale deck URL here..."
+          cols="50"
+          rows="5"
+        ></textarea>
+        <p></p>
+      </div>
+      <!-- Select -->
+      <div>
+        <h2 class="full-width" style="background-color: #80f080">
+          Settings
+        </h2>
+        <p></p>
+        <label for="version"><i>Card Data Version: </i></label>
+        <select name="version" id="version">
+          <option value="current" selected>Current (S12-Prince)</option>
+          <option value="retro">Retro (approx. March 2016)</option>
+          <option value="dev">Dev (experimental)</option>
+          <option value="legacy-0520">May 2020 (S11-Dragon)</option>
+          <option value="legacy-0420">April 2020 (S10-Heist)</option>
+          <option value="legacy-0320">March 2020 (S9-Birthday)</option>
+          <option value="legacy-0220">February 2020 (S8-Legendary II)</option>
+          <option value="legacy-0120">January 2020 (S7-Lunar)</option>
+          <option value="legacy-1219">December 2019 (S6-Clashmas)</option>
+          <option value="legacy-1119">November 2019 (S5-Goblin)</option>
+          <option value="legacy-1019">October 2019 (S4-Shocktober)</option>
+          <!--<option value="legacy-0919">September 2019 (S3-Legendary I)</option>-->
+          <!--<option value="legacy-0819">August 2019 (S2-Shipwrecked)</option>-->
+          <!--<option value="legacy-0719">July 2019 (S1-Flood)</option>-->
+        </select>
+        <p></p>
+        <label for="order"><i>Randomize Deck Order: </i></label>
+        <select name="order" id="order">
+          <option value="true" selected>Yes</option>
+          <option value="false">No</option>
+        </select>
+        <p></p>
+        <label for="maxElixir"><i>Max Elixir(1-100):</i></label>
+        <input
+          type="number"
+          id="maxElixir"
+          name="maxElixir"
+          min="1"
+          max="100"
+          value="10"
+        />
+        <p></p>
+        <label for="elixirRegen"><i>Elixir Regeneration(0-10):</i></label>
+        <input
+          type="number"
+          id="elixirR"
+          name="elixirR"
+          min="0"
+          max="10"
+          value="1"
+        />
+      </div>
+      <!-- Submit buttons, both do the same thing -->
+      <p></p>
+      <input type="submit" value="Begin" />
+      <button type="reset">Reset Values</button>
+    </form>
+    <p></p>
+    <footer
+      class="full-width"
+      style="background-color: purple; font-size: 12px; color: white"
+    >
+      Created by Scholarly Gaming, 2020<img src="logo.png" width="64" height="64" style="margin: 10px auto 10px; display: block"></img>This content is not
+      affiliated with, endorsed, sponsored, or specifically approved by
+      Supercell and Supercell is not responsible for it. For more information
+      see Supercell’s Fan Content Policy:
+      <a
+        style="color:#c0c0c0"
+        href="http://www.supercell.com/fan-content-policy"
+        >www.supercell.com/fan-content-policy</a
+      >
+    </footer>
+  </body>
+</html>
